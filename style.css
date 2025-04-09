@@ -38,6 +38,7 @@ body {
 
 
 .name {
+    font-family: Caveat;
     position: absolute;
     top: 8vh;
     left: 47vw;
@@ -50,7 +51,7 @@ body {
 .container {
     display: flex;
     overflow: hidden;
-    height: calc(100vh -180px);
+    height: calc(100vh - 180px);
     flex-wrap: nowrap;
 }
 
@@ -164,7 +165,7 @@ body {
     width: 25vw;
     direction: ltr;
     padding: 3vh;
-    font-size: calc(1vh + 0.5vw);
+    font-size: calc(1vw + 0.5vh);
     margin: -2vh 2vw;
     align-items: center;
 
@@ -201,7 +202,7 @@ button {
     color: black;
     font-size: calc(1vh + 0.5vw);
     cursor: pointer;
-    margin: 3vh 4.5vw;
+    margin: 1vh 4.5vw;
 }
 
 button:hover {

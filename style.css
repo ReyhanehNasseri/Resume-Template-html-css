@@ -75,6 +75,7 @@ body {
     left: 65%;
     top: 32vh;
     height: 60vh;
+
 }
 
 .about-me {
@@ -122,7 +123,7 @@ body {
 .contact{
     box-sizing: border-box;
     font-size: calc(1.2vw + 0.5vh);
-    margin: 2vh 0;
+    margin: 2vh -4vh;
     padding: 3vh;
     color: black;
 }
@@ -152,24 +153,55 @@ body {
 }
 
 .contact-form{
+    position: relative;
+    box-sizing: border-box;
     background-color: #e8cdb3;
     border: 3px solid;
     border-color: #b88d63;
     border-radius: 3px;
-    height: 43vh;
-    width: 21vw;
+    height: 41vh;
+    width: 25vw;
     direction: ltr;
-    margin: -2vh 4vw;
+    padding: 3vh;
+    font-size: calc(1vh + 0.5vw);
+    margin: -2vh 3.5vw;
 
 }
 
 input[type="text"],
-input[type="email"],
-textarea {
+input[type="email"]{
+    box-sizing: border-box;
     width: 16vw;
-    height: 2vh;
+    height: 3vh;
     padding: 0.2vw;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 2vh 2vw;
+    margin: 1vh 1vw 2vh 0vw;
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 16vw;
+    height: 5vh;
+    padding: 0.2vh 0.2vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 1vh 1vw 2vh 0vw;
+}
+
+button {
+    width: 36%;
+    padding: 0.1vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #b88d63;
+    color: black;
+    font-size: calc(1vh + 0.5vw);
+    cursor: pointer;
+    margin: 3vh 7vw;
+}
+
+button:hover {
+    background-color: darkgoldenrod;
+    width: 9vw;
 }

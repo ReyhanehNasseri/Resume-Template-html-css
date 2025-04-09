@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.personal-header {
+    background: linear-gradient(to right, #b88d63 65%, #e8cdb3 35%);
+    height: 25vh; /* ارتفاع ثابت */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.profile-image {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 25vh;
+    object-fit: cover;
+    }
+
+
+.name {
+    position: absolute;
+    top: 8vh;
+    left: 47vw;
+    transform: translate(-50%, -50%);
+    font-size: calc(2vw + 0.5vh);
+    color: black;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    height: calc(100vh -180px);
+    flex-wrap: nowrap;
+}
+
+.left {
+    flex: 0 0 27%;
+    padding: 20px;
+    text-align: left;
+    max-width: 27%;
+}
+
+.right {
+    flex: 0 0 59%;
+    padding: 20px;
+    text-align: left;
+    max-width: 59%;
+}
+
+.divider {
+    width: 2px;
+    background-color: rgb(184, 141, 99);
+    position: absolute;
+    left: 65%;
+    top: 32vh;
+    height: 60vh;
+}
+
+.about-me {
+    box-sizing: border-box;
+    font-size: calc(1.2vw + 0.5vh);
+    margin: 2vh 0;
+    padding: 3vh;
+    color: black;
+}
+
+.about-me-content {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: calc(1vw + 0.5vh);
+    margin:  -5vh 5vw 2vh 6px;
+    padding: 3vh;
+    color: black;
+}
+
+.skills {
+    box-sizing: border-box;
+    font-size: calc(1.2vw + 0.5vh);
+    padding: 3vh;
+    color: black;
+    margin: 2vh 0;
+}
+
+.skills-content {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: calc(1vw + 0.5vh); /* فاصله عمودی */
+    padding: 3vh;
+    color: black;
+    direction: ltr;
+    margin: -5vh 20px;
+}
+
+@media (max-width: 1000px) {
+    .name {
+        top: 31%;
+        left: 20%;
+    }
+}
+
+.contact{
+    box-sizing: border-box;
+    font-size: calc(1.2vw + 0.5vh);
+    margin: 2vh 0;
+    padding: 3vh;
+    color: black;
+}
+
+.footer {
+    background: linear-gradient(to right, #b88d63 65%, #e8cdb3 35%);
+    height: 5vh; /* ارتفاع ثابت */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer-content{
+    position: absolute;
+    top: 0.8vh;
+    left: 47vw;
+    transform: translate(-50%, -50%);
+    font-size: calc(0.8vw + 0.5vh);
+    color: black;
+    padding: 20px;
+}
+
+.contact-form{
+    background-color: #e8cdb3;
+    border: 3px solid;
+    border-color: #b88d63;
+    border-radius: 3px;
+    height: 43vh;
+    width: 21vw;
+    direction: ltr;
+    margin: -2vh 4vw;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 16vw;
+    height: 2vh;
+    padding: 0.2vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2vh 2vw;
+}

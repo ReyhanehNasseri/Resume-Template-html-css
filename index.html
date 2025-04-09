@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume template</title>
-    <link rel="stylesheet" href="headerStyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header class="personal-header">
         <div class="header-content">
             <img src="profilepic.png" alt="profile pic" class="profile-image">
             <h1 class="name">Reyhaneh Nasseri</h1>
-            <h3 class="job-name">Programmer</h3>
         </div>
     </header>
 
     <div class="container">
 
         <div class="left">
-            <h2>قسمت چپ</h2>
-            <p>محتوای بخش چپ.</p>
+            <h2 class="contact">Contact</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name and Lastname : </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                </form>
         </div>
 
         <div class="divider"></div>
 
         <div class="right">
-            <h2>قسمت راست</h2>
-            <p>محتوای بخش راست.</p>
+
+            <h2 class="about-me">ABOUT ME</h2>
+
+            <p class="about-me-content">
+                I am a second-year student in the Computer Science program at Khatam University
+                I have a keen interest in computers, particularly in backend development
+                Although I am still learning, I am dedicated to improving my skills in this area
+                and am actively working towards gaining the knowledge and experience necessary
+                to excel in the field
+            </p>
+
+            <div>
+               <h2 class="skills">Skills</h2>
+
+               <ul class="skills-content">
+                 <li>Coding Proficiency</li>
+                 <li>Problem-Solving</li>
+                 <li>Database Management</li>
+               </ul>
+
+            </div>
+
         </div>
+
+        <footer class="footer">
+            <h1 class="footer-content">Thanks for viewing my profile</h1>
+        </footer>
+
     </div>
 
 

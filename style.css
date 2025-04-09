@@ -116,14 +116,15 @@ body {
 @media (max-width: 1000px) {
     .name {
         top: 31%;
-        left: 20%;
+        left: 25%;
+        font-size: 3vh;
     }
 }
 
 .contact{
     box-sizing: border-box;
     font-size: calc(1.2vw + 0.5vh);
-    margin: 2vh -4vh;
+    margin: 2vh -2vh;
     padding: 3vh;
     color: black;
 }
@@ -164,12 +165,14 @@ body {
     direction: ltr;
     padding: 3vh;
     font-size: calc(1vh + 0.5vw);
-    margin: -2vh 3.5vw;
+    margin: -2vh 2vw;
+    align-items: center;
 
 }
 
 input[type="text"],
 input[type="email"]{
+    text-align: center;
     box-sizing: border-box;
     width: 16vw;
     height: 3vh;
@@ -198,7 +201,7 @@ button {
     color: black;
     font-size: calc(1vh + 0.5vw);
     cursor: pointer;
-    margin: 3vh 7vw;
+    margin: 3vh 4.5vw;
 }
 
 button:hover {
